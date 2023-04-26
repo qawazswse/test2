@@ -14,7 +14,7 @@ export class StringComponent {
   }
 
   onClick($event: MouseEvent) {
-    this.title = 'clicked';
+    console.log("onClick");
   }
 
 }
