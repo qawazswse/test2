@@ -1,0 +1,6 @@
+<div class="temp-window">
+  <a routerLink="/about" routerLinkActive="active" (click)="onClickAbout()">About</a>
+  <a routerLink="/contact" routerLinkActive="active" (click)="onClickContact()">Contact</a>
+  <app-about-component *ngIf="showAbout"></app-about-component>
+  <app-contact-component *ngIf="showContact"></app-contact-component>
+</div>

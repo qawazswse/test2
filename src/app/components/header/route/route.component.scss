@@ -1,0 +1,26 @@
+// scss of route bar
+
+.route {
+  background: red;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  border-radius: 15px;
+  font-size: 12px;
+  font-weight: 500;
+  margin: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.route:hover {
+  background: blue;
+}
+
+.route.active {
+  background: green;
+}
+
+.route.button {
+  background: aqua;
+}
