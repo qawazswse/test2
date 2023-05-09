@@ -3,19 +3,19 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { RouterModule, Routes} from "@angular/router";
 import { AppComponent } from './app.component';
-import { RouteComponent } from './components/head/route/route.component';
-import { HeadComponent } from './components/head/head.component';
-import { PopoverComponent } from './components/head/route/popover/popover.component';
-import { AboutComponent } from './components/head/route/popover/about/about.component';
-import { ContactComponent } from './components/head/route/popover/contact/contact.component';
+import { RouteComponent } from './components/mainpage/head/route/route.component';
+import { HeadComponent } from './components/mainpage/head/head.component';
+import { PopoverComponent } from './components/mainpage/head/route/popover/popover.component';
+import { AboutComponent } from './components/mainpage/head/route/popover/about/about.component';
+import { ContactComponent } from './components/mainpage/head/route/popover/contact/contact.component';
 
-import { BodyComponent } from './components/body/body.component';
-import { DiscountViewComponent } from './components/body/discount-view/discount-view.component';
-import { PopularViewComponent } from './components/body/popular-view/popular-view.component';
-import { CategoryViewComponent } from './components/body/category-view/category-view.component';
+import { BodyComponent } from './components/mainpage/body/body.component';
+import { DiscountViewComponent } from './components/mainpage/body/discount-view/discount-view.component';
+import { PopularViewComponent } from './components/mainpage/body/popular-view/popular-view.component';
+import { CategoryViewComponent } from './components/mainpage/body/category-view/category-view.component';
 
-import { FootComponent } from './components/foot/foot.component';
-import { ScrollableContainerComponent } from './components/body/scrollable-container/scrollable-container.component';
+import { FootComponent } from './components/mainpage/foot/foot.component';
+import { ScrollableContainerComponent } from './components/mainpage/body/scrollable-container/scrollable-container.component';
 
 const appRoutes: Routes = [
   { path: 'about', component: AboutComponent },

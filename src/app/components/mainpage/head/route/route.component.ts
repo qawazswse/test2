@@ -1,5 +1,5 @@
 import {Component, EventEmitter, Output} from '@angular/core';
-import {RouteBarService} from "../../../service/head/route/route-bar.service";
+import {RouteBarService} from "../../../../service/mainpage/head/route/route-bar.service";
 
 @Component({
   selector: 'app-route',

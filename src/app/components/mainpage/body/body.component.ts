@@ -1,5 +1,5 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
-import {RouteBarService} from "../../service/head/route/route-bar.service";
+import {RouteBarService} from "../../../service/mainpage/head/route/route-bar.service";
 import {Subscription} from "rxjs";
 
 @Component({
