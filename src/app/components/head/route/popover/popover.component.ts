@@ -10,12 +10,12 @@ export class PopoverComponent {
   showContact = false;
 
   onClickAbout() {
-    this.showAbout = !this.showAbout;
+    this.showAbout = true;
     this.showContact = false;
   }
 
   onClickContact() {
-    this.showContact = !this.showContact;
+    this.showContact = true;
     this.showAbout = false;
   }
 }

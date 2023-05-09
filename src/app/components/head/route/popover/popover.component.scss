@@ -1,7 +1,10 @@
-.temp-window {
+.popover {
   position: absolute;
+  top: 100%;
+  left: 60%;
   background-color: #ffffff;
   border: 1px solid #ccc;
+  color: black;
   border-radius: 4px;
   padding: 1rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);

@@ -1,0 +1,7 @@
+<nav class="route">
+  <button (click)="setContainer('discount')" class="button">Discount</button>
+  <button (click)="setContainer('popular')" class="button">Popular</button>
+  <button (click)="setContainer('category')" class="button">Category</button>
+  <button (click)="showPopover = !showPopover" class="button">more info</button>
+  <app-popover *ngIf="showPopover"></app-popover>
+</nav>
