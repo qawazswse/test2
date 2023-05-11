@@ -16,6 +16,9 @@ import { CategoryViewComponent } from './components/mainpage/body/category-view/
 
 import { FootComponent } from './components/mainpage/foot/foot.component';
 import { ScrollableContainerComponent } from './components/mainpage/body/scrollable-container/scrollable-container.component';
+import { ItemPreviewComponent } from './components/mainpage/item-preview/item-preview.component';
+import { SeachbarComponent } from './components/mainpage/head/seachbar/seachbar.component';
+import { SeachResultViewComponent } from './components/mainpage/body/seach-result-view/seach-result-view.component';
 
 const appRoutes: Routes = [
   { path: 'about', component: AboutComponent },
@@ -35,7 +38,10 @@ const appRoutes: Routes = [
     HeadComponent,
     BodyComponent,
     FootComponent,
-    ScrollableContainerComponent
+    ScrollableContainerComponent,
+    ItemPreviewComponent,
+    SeachbarComponent,
+    SeachResultViewComponent
   ],
   imports: [
     BrowserModule,
