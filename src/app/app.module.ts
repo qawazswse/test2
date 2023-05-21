@@ -19,6 +19,9 @@ import { ScrollableContainerComponent } from './components/mainpage/body/scrolla
 import { ItemPreviewComponent } from './components/mainpage/item-preview/item-preview.component';
 import { SeachbarComponent } from './components/mainpage/head/seachbar/seachbar.component';
 import { SeachResultViewComponent } from './components/mainpage/body/seach-result-view/seach-result-view.component';
+import { LoginFormComponent } from './components/loginpage/body/login-form/login-form.component';
+import {ReactiveFormsModule} from "@angular/forms";
+import { LoginPageComponent } from './components/loginpage/login-page.component';
 
 const appRoutes: Routes = [
   { path: 'about', component: AboutComponent },
@@ -41,12 +44,15 @@ const appRoutes: Routes = [
     ScrollableContainerComponent,
     ItemPreviewComponent,
     SeachbarComponent,
-    SeachResultViewComponent
+    SeachResultViewComponent,
+    LoginFormComponent,
+    LoginPageComponent
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(appRoutes),
-    RouterModule
+    RouterModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

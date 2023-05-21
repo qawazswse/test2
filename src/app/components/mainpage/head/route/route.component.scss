@@ -1,8 +1,8 @@
 .route {
   position: relative;
-  background: red;
+  background: #749c9c;
   color: white;
-  padding: 5px 10px;
+  padding: 0px 0px;
   text-align: center;
   border-radius: 15px;
   font-size: 12px;
@@ -12,17 +12,41 @@
   width: 98%;
 }
 
+.button {
+  background: #bae3e1;
+  width: 100px;
+  height: 40px;
+  margin: 1rem;
+  border-radius: 15px;
+}
+
 .route:hover {
-  background: blue;
+  background: #5b7e7e;
 }
 
 .route.active {
   background: green;
 }
 
-.button {
-  background: aqua;
+.route h1 {
+  font-size: 1.5em;
+  margin-top: 0;
+}
+
+.route p {
+  margin-bottom: 1em;
+}
+
+.more-info {
+  position: relative;
+  background: #bae3e1;
   width: 100px;
   height: 40px;
   margin: 1rem;
+  border-radius: 15px;
+}
+
+.more-info.popover {
+  top: 0;
+  left: 0;
 }
