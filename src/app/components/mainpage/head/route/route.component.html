@@ -4,5 +4,5 @@
   <button (click)="setContainer('category')" class="button">Category</button>
   <button (click)="showPopover = !showPopover" class="button">more info</button>
   <app-popover *ngIf="showPopover" class="popover"></app-popover>
-  <a href="/login-page" class="button">Login</a>
+  <button (click)="setContainer('login')" class="button">Login</button>
 </nav>

@@ -1,5 +1,6 @@
 import {Component, EventEmitter, Output} from '@angular/core';
 import {RouteBarService} from "../../../../service/pages/mainpage/head/route/route-bar.service";
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-route',
@@ -15,5 +16,4 @@ export class RouteComponent {
   setContainer(container: string): void {
     this.routeBarService.setData(container);
   }
-
 }
