@@ -13,8 +13,12 @@ export class CategoryService {
     this.loadMoreData();
   }
 
-  loadMoreData() {
-    this.items.push(...Array(10).fill(this.containerName + 'Item ' + this.count++));
+  loadMoreData(): Array<String> {
+    return Array(1).fill(this.containerName + 'Item ' + this.count++);
+  }
+
+  fillItems(Items: Array<String>): void {
+    this.items.push(...Items);
   }
 
 }

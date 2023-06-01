@@ -3,18 +3,20 @@ import { Injectable } from '@angular/core';
 @Injectable({
   providedIn: 'root'
 })
-export class DiscountService {
+export class DiscountService{
 
   count: number = 0;
   containerName: string = 'discount';
   items: Array<String> = [];
 
-  constructor() {
-    this.loadMoreData();
+  constructor() {}
+
+  loadMoreData(loadNumber: number): Array<String> {
+    return Array(loadNumber).fill(this.containerName + 'Item ' + this.count++);
   }
 
-  loadMoreData() {
-    this.items.push(...Array(10).fill(this.containerName + 'Item ' + this.count++));
+  fillItems(Items: Array<String>): void {
+    this.items = Items;
   }
 
 }

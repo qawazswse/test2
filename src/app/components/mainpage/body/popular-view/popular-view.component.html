@@ -1,5 +1,5 @@
 <h2>popular</h2>
-<div (scroll)="loadMoreData()">
+<div class="scrollable-container" (scroll)="loadMoreData()">
   <ul>
     <li *ngFor="let item of items">
       {{item}}

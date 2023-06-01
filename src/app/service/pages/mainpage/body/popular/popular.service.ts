@@ -9,16 +9,14 @@ export class PopularService {
   containerName: string = 'popular';
   items: Array<String> = [];
 
-  constructor() {
-    this.loadMoreData();
-  }
+  constructor() {}
 
   loadMoreData(): Array<String> {
-    return Array(10).fill(this.containerName + 'Item ' + this.count++);
+    return Array(1).fill(this.containerName + 'Item ' + this.count++);
   }
 
   fillItems(Items: Array<String>): void {
-    this.items.push(...Items);
+    this.items = Items;
   }
 
 }
